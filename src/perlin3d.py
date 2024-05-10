@@ -116,4 +116,4 @@ def marble_3d(size):
     return buffer
 
 if __name__ == '__main__':
-    mimsave('clouds.gif', list(cloud_3d(64)))
+    mimsave('clouds.gif', list(cloud_3d(64)), loop=0)

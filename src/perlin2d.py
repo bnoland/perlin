@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.stats import uniform
-from imageio import mimsave
+from imageio import mimwrite
 
 def random_vector_2d(magnitude):
     theta = uniform.rvs(0, 2 * np.pi)
@@ -108,4 +108,4 @@ def waves(size):
     return buffer
 
 if __name__ == '__main__':
-    mimsave('waves.gif', list(waves(64)), fps=60)
+    mimwrite('waves.gif', list(waves(64)), fps=60, loop=0)
